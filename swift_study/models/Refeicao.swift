@@ -10,10 +10,10 @@ import UIKit
 class Refeicao: NSObject {
     //Atributos
     let name: String
-    let felicidade: String
+    let felicidade: Int
     let itens : Array<Item> = []
     
-    init(name: String, felicidade:String) {
+    init(name: String, felicidade:Int) {
         self.name=name
         self.felicidade=felicidade
     }
