@@ -63,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130.40000000000001" y="99.753694581280797"/>
+            <point key="canvasLocation" x="175" y="100"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sUr-LY-Hzt">
@@ -79,7 +79,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YaA-3M-72q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1614" y="106"/>
+            <point key="canvasLocation" x="-1480" y="100"/>
         </scene>
         <!--Refeicoes Table View Controller-->
         <scene sceneID="c3j-M2-mX4">
@@ -107,7 +107,7 @@
                     <navigationItem key="navigationItem" id="4bT-oQ-9jA">
                         <barButtonItem key="rightBarButtonItem" title="Add" id="4uL-n1-yxY">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="Jfs-bu-5aR"/>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="adicionar" id="Jfs-bu-5aR"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
