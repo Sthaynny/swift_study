@@ -7,13 +7,13 @@
 import LocalAuthentication
 import UIKit
 
-protocol ViewControllerDelegate{
+protocol AdicionaRefeicaoDelegate{
     func add(_ refeicao:Refeicao)
 }
 
 class ViewController: UIViewController {
     
-    var delegate: ViewControllerDelegate?
+    var delegate: AdicionaRefeicaoDelegate?
     
     @IBOutlet var nomeTextFild: UITextField?
     @IBOutlet var felicidadeTextFild: UITextField?
