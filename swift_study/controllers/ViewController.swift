@@ -4,7 +4,7 @@
 //
 //  Created by Igor Sthaynny on 18/10/21.
 //
-
+import LocalAuthentication
 import UIKit
 
 class ViewController: UIViewController {

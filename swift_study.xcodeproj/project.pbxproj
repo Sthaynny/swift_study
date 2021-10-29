@@ -15,6 +15,7 @@
 		3F1E5263271DEB5000E528AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F1E5261271DEB5000E528AC /* LaunchScreen.storyboard */; };
 		3F5210022725C0B30083D1E7 /* Refeicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5210012725C0B30083D1E7 /* Refeicao.swift */; };
 		3F5210042725C0FA0083D1E7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5210032725C0FA0083D1E7 /* Item.swift */; };
+		3FDCF2EC272C363600ABB3FA /* RefeicoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDCF2EB272C363500ABB3FA /* RefeicoesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		3F5210002725B7560083D1E7 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		3F5210012725C0B30083D1E7 /* Refeicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refeicao.swift; sourceTree = "<group>"; };
 		3F5210032725C0FA0083D1E7 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		3FDCF2EB272C363500ABB3FA /* RefeicoesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefeicoesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				3F1E525A271DEB4F00E528AC /* ViewController.swift */,
+				3FDCF2EB272C363500ABB3FA /* RefeicoesTableViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				3F5210042725C0FA0083D1E7 /* Item.swift in Sources */,
 				3F1E525B271DEB4F00E528AC /* ViewController.swift in Sources */,
 				3F1E5257271DEB4F00E528AC /* AppDelegate.swift in Sources */,
+				3FDCF2EC272C363600ABB3FA /* RefeicoesTableViewController.swift in Sources */,
 				3F1E5259271DEB4F00E528AC /* SceneDelegate.swift in Sources */,
 				3F5210022725C0B30083D1E7 /* Refeicao.swift in Sources */,
 			);
