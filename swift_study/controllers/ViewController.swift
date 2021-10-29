@@ -7,9 +7,13 @@
 import LocalAuthentication
 import UIKit
 
+protocol ViewControllerDelegate{
+    func add(_ refeicao:Refeicao)
+}
+
 class ViewController: UIViewController {
     
-    var tableViewController: RefeicoesTableViewController?
+    var delegate: ViewControllerDelegate?
     
     @IBOutlet var nomeTextFild: UITextField?
     @IBOutlet var felicidadeTextFild: UITextField?
@@ -25,7 +29,7 @@ class ViewController: UIViewController {
        
         print("Comi \(refeicao.name) fiquei com felicidade \(refeicao.felicidade)!")
         
-        tableViewController?.add(refeicao)
+        delegate?.add(refeicao)
         navigationController?.popViewController(animated: true)
         
     }
