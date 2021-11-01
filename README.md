@@ -42,7 +42,11 @@
 
 # :camera: Screenshots
 <div align="center">
-   N/A
+   ![Captura de ecrã 2021-11-01, às 14 58 57](https://user-images.githubusercontent.com/66264766/139718302-88884513-d115-4969-8008-355c206d7f65.png)
+   ![image](https://user-images.githubusercontent.com/66264766/139718481-8f7cda86-3139-4f5a-9894-a20068f17553.png)
+   ![image](https://user-images.githubusercontent.com/66264766/139718528-0e83cee7-7611-49f2-a0c5-a18cc4fd4114.png)
+
+
 </div>
    
 
