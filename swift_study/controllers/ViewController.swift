@@ -11,15 +11,15 @@ protocol AdicionaRefeicaoDelegate{
     func add(_ refeicao:Refeicao)
 }
 
-class ViewController: UIViewController , UITableViewDataSource{
+class ViewController: UIViewController , UITableViewDataSource , UITableViewDelegate{
     
     
     
     // MARK: - ATRIBUTOS
     var delegate: AdicionaRefeicaoDelegate?
-    var itens: [String] = ["test 1","test 1","test 1","test 1","test 1","test 1","test 1","test 1","test 1","test 1","test 1","test 1","test 1","test 1","test 1","test 1","test 1","test 1"]
+    var itens: [String] = ["test 1","test 2","test 3","test 4","test 5","test 6"]
     
-    //MARK: - UITableViewDataSource
+    // MARK: - UITableViewDataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itens.count;
@@ -29,6 +29,22 @@ class ViewController: UIViewController , UITableViewDataSource{
         let celula = UITableViewCell(style: .default, reuseIdentifier: nil)
         celula.textLabel?.text = itens[indexPath.row]
         return celula;
+    }
+    
+    // MARK: - UITableViewDelegate
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let celula = tableView.cellForRow(at: indexPath) else {
+            return
+        }
+        
+        if celula.accessoryType == .none{
+            celula.accessoryType = .checkmark
+        }else{
+            celula.accessoryType = .none
+        }
+        
+
     }
     
     
