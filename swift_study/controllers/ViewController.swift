@@ -13,12 +13,16 @@ protocol AdicionaRefeicaoDelegate{
 
 class ViewController: UIViewController {
     
+    // MARK: - ATRIBUTOS
     var delegate: AdicionaRefeicaoDelegate?
+    
+    // MARK: - IBOutlets
     
     @IBOutlet var nomeTextFild: UITextField?
     @IBOutlet var felicidadeTextFild: UITextField?
 
-  
+    // MARK: - IBActions
+    
     @IBAction func adicionar(_ sender: Any) {
         guard let nomeRefeicao = nomeTextFild?.text , let felicidadeString = felicidadeTextFild?.text , let felicidade = Int(felicidadeString) else {
             print("erro ao adicionar refeição")
