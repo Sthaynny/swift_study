@@ -11,10 +11,26 @@ protocol AdicionaRefeicaoDelegate{
     func add(_ refeicao:Refeicao)
 }
 
-class ViewController: UIViewController {
+class ViewController: UIViewController , UITableViewDataSource{
+    
+    
     
     // MARK: - ATRIBUTOS
     var delegate: AdicionaRefeicaoDelegate?
+    var itens: [String] = ["test 1","test 1","test 1","test 1","test 1","test 1","test 1","test 1","test 1","test 1","test 1","test 1","test 1","test 1","test 1","test 1","test 1","test 1"]
+    
+    //MARK: - UITableViewDataSource
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return itens.count;
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let celula = UITableViewCell(style: .default, reuseIdentifier: nil)
+        celula.textLabel?.text = itens[indexPath.row]
+        return celula;
+    }
+    
     
     // MARK: - IBOutlets
     
