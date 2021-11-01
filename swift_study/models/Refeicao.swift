@@ -11,11 +11,12 @@ class Refeicao: NSObject {
     //Atributos
     let name: String
     let felicidade: Int
-    let itens : Array<Item> = []
+    var itens : Array<Item>
     
-    init(name: String, felicidade:Int) {
+    init(name: String, felicidade:Int, itens: [Item] = []) {
         self.name=name
         self.felicidade=felicidade
+        self.itens = itens
     }
     
     func totalCalorias() -> Double {
@@ -25,4 +26,7 @@ class Refeicao: NSObject {
         }
         return totalCalorias
     }
+    
+    
 }
+

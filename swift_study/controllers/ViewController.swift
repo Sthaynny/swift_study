@@ -17,7 +17,16 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
     
     // MARK: - ATRIBUTOS
     var delegate: AdicionaRefeicaoDelegate?
-    var itens: [String] = ["test 1","test 2","test 3","test 4","test 5","test 6"]
+    var itens: [Item] = [
+        Item(nome: "Queijo", calorias: 51.1),
+        Item(nome: "Tomate", calorias: 51.1),
+        Item(nome: "Arroz", calorias: 51.1),
+        Item(nome: "Calabresa", calorias: 51.1),
+        Item(nome: "Bacon", calorias: 51.1),
+        Item(nome: "Molho apimentado", calorias: 51.1),
+        
+    ]
+    var itensSelecionados: [Item] = []
     
     // MARK: - UITableViewDataSource
     
@@ -27,7 +36,7 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let celula = UITableViewCell(style: .default, reuseIdentifier: nil)
-        celula.textLabel?.text = itens[indexPath.row]
+        celula.textLabel?.text = itens[indexPath.row].nome
         return celula;
     }
     
@@ -40,8 +49,14 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
         
         if celula.accessoryType == .none{
             celula.accessoryType = .checkmark
+            itensSelecionados.append(itens[indexPath.row])
         }else{
             celula.accessoryType = .none
+            let item = itens[indexPath.row]
+            if let posicao = itensSelecionados.firstIndex(of: item){
+                itensSelecionados.remove(at: posicao)
+            }
+            
         }
         
 
@@ -61,9 +76,11 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
             return
         }
         
-        let refeicao = Refeicao(name: nomeRefeicao, felicidade: felicidade)
+        let refeicao = Refeicao(name: nomeRefeicao, felicidade: felicidade, itens: itensSelecionados)
        
         print("Comi \(refeicao.name) fiquei com felicidade \(refeicao.felicidade)!")
+        
+        
         
         delegate?.add(refeicao)
         navigationController?.popViewController(animated: true)
