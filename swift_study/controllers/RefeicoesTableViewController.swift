@@ -12,7 +12,7 @@ import UIKit
 class RefeicoesTableViewController: UITableViewController, AdicionaRefeicaoDelegate {
     var refeicoes = [
         Refeicao(name: "Pizza", felicidade: 5),
-        Refeicao(name: "Feijão", felicidade: 5),
+        Refeicao(name: "Podrão", felicidade: 5),
         Refeicao(name: "Macarrão", felicidade: 4),
     ]
     
@@ -23,13 +23,23 @@ class RefeicoesTableViewController: UITableViewController, AdicionaRefeicaoDeleg
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let celula = UITableViewCell(style: .default, reuseIdentifier: nil)
         celula.textLabel?.text = refeicoes[indexPath.row].name
-        
+        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(mostrarDetalhes(_:)))
+        celula.addGestureRecognizer(longPress)
         return celula
     }
     
     func add(_ refeicao:Refeicao) {
         refeicoes.append(refeicao)
         tableView.reloadData()
+    }
+    
+    @objc func mostrarDetalhes(_ gesture: UILongPressGestureRecognizer){
+        if gesture.state == .began{
+            let celula = gesture.view as! UITableViewCell
+            guard let indexPath = tableView.indexPath(for: celula) else{ return }
+            let refecicao = refeicoes[indexPath.row]
+            print(refecicao.name)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
