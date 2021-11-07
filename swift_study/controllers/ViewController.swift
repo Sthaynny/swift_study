@@ -68,7 +68,7 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
     
     @IBOutlet var nomeTextFild: UITextField?
     @IBOutlet var felicidadeTextFild: UITextField?
-    @IBOutlet weak var itensTableView: UITableView!
+    @IBOutlet weak var itensTableView: UITableView?
     
     // MARK: - View life cycle
     
@@ -83,8 +83,17 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
     }
     
     func add(_ item: Item) {
+        guard let tableView = itensTableView else {
+            let alerta = UIAlertController(title: "Desculpa!!", message: "Algo de errado aconteceu... Tente novamente", preferredStyle: .alert)
+            let fechar = UIAlertAction(title: "fechar", style: .cancel, handler: nil)
+            alerta.addAction(fechar)
+            present(alerta, animated: true, completion: nil)
+            return
+        }
+
         itens.append(item)
-        itensTableView.reloadData()
+        
+        tableView.reloadData()
         
     }
     

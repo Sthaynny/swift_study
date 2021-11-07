@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "F5F325A3-7DE5-4723-B2F3-767DED5C67E4"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "15B0B088-FDB5-482D-AC2D-769222F1FA7D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "swift_study/controllers/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "15B0B088-FDB5-482D-AC2D-769222F1FA7D - fe69793f33fba8f7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swift_study.ViewController.itensTableView.getter : Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "swift_study"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/igorsthaynny/Documents/GitHub/swift_study/swift_study/controllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "15B0B088-FDB5-482D-AC2D-769222F1FA7D - b9787d7bda8984c3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swift_study.ViewController.itensTableView.setter : Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "swift_study"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/igorsthaynny/Documents/GitHub/swift_study/swift_study/controllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "15B0B088-FDB5-482D-AC2D-769222F1FA7D - ba75a95f28ba36c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swift_study.ViewController.itensTableView.modify : Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "swift_study"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/igorsthaynny/Documents/GitHub/swift_study/swift_study/controllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "15B0B088-FDB5-482D-AC2D-769222F1FA7D - 5a06d60c00b0a0af"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swift_study.ViewController.itensTableView.modify : Swift.Optional&lt;__C.UITableView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "swift_study"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/igorsthaynny/Documents/GitHub/swift_study/swift_study/controllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "15B0B088-FDB5-482D-AC2D-769222F1FA7D - e5f2711e7d8f7cff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swift_study.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; swift_study.ViewController"
+                  moduleName = "swift_study"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/igorsthaynny/Documents/GitHub/swift_study/swift_study/controllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "652">
+               </Location>
+               <Location
+                  uuid = "15B0B088-FDB5-482D-AC2D-769222F1FA7D - 871855a6db9d09aa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swift_study.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;swift_study.ViewController&gt;"
+                  moduleName = "swift_study"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/igorsthaynny/Documents/GitHub/swift_study/swift_study/controllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "628">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD74AB9B-BF51-4966-AAF1-C3DC7B0C9EF7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "swift_study/controllers/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "FD74AB9B-BF51-4966-AAF1-C3DC7B0C9EF7 - 287ba20227066e78"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swift_study.ViewController.nomeTextFild.getter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "swift_study"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/igorsthaynny/Documents/GitHub/swift_study/swift_study/controllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "FD74AB9B-BF51-4966-AAF1-C3DC7B0C9EF7 - 29951d8042303a6c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swift_study.ViewController.nomeTextFild.setter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "swift_study"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/igorsthaynny/Documents/GitHub/swift_study/swift_study/controllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "FD74AB9B-BF51-4966-AAF1-C3DC7B0C9EF7 - 42ad47a0bcf7c1e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swift_study.ViewController.nomeTextFild.modify : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "swift_study"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/igorsthaynny/Documents/GitHub/swift_study/swift_study/controllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "FD74AB9B-BF51-4966-AAF1-C3DC7B0C9EF7 - 8a366474151b7004"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swift_study.ViewController.nomeTextFild.modify : Swift.Optional&lt;__C.UITextField&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "swift_study"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/igorsthaynny/Documents/GitHub/swift_study/swift_study/controllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "FD74AB9B-BF51-4966-AAF1-C3DC7B0C9EF7 - e5f2711e7d8f7ca1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swift_study.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; swift_study.ViewController"
+                  moduleName = "swift_study"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/igorsthaynny/Documents/GitHub/swift_study/swift_study/controllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "608">
+               </Location>
+               <Location
+                  uuid = "FD74AB9B-BF51-4966-AAF1-C3DC7B0C9EF7 - 871855a6db9d09f4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swift_study.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;swift_study.ViewController&gt;"
+                  moduleName = "swift_study"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/igorsthaynny/Documents/GitHub/swift_study/swift_study/controllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "584">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2956324F-D360-4A54-B4C8-08E2592F91A7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "swift_study/controllers/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "2956324F-D360-4A54-B4C8-08E2592F91A7 - a7e6149e7a056758"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swift_study.ViewController.felicidadeTextFild.getter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "swift_study"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/igorsthaynny/Documents/GitHub/swift_study/swift_study/controllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "2956324F-D360-4A54-B4C8-08E2592F91A7 - ece4bd54f4c33364"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swift_study.ViewController.felicidadeTextFild.setter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "swift_study"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/igorsthaynny/Documents/GitHub/swift_study/swift_study/controllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "2956324F-D360-4A54-B4C8-08E2592F91A7 - 1a1b14f7a271834f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swift_study.ViewController.felicidadeTextFild.modify : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "swift_study"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/igorsthaynny/Documents/GitHub/swift_study/swift_study/controllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "2956324F-D360-4A54-B4C8-08E2592F91A7 - 50432b157fcfaf4f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swift_study.ViewController.felicidadeTextFild.modify : Swift.Optional&lt;__C.UITextField&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "swift_study"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/igorsthaynny/Documents/GitHub/swift_study/swift_study/controllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "2956324F-D360-4A54-B4C8-08E2592F91A7 - e5f2711e7d8f7cde"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swift_study.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; swift_study.ViewController"
+                  moduleName = "swift_study"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/igorsthaynny/Documents/GitHub/swift_study/swift_study/controllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "632">
+               </Location>
+               <Location
+                  uuid = "2956324F-D360-4A54-B4C8-08E2592F91A7 - 871855a6db9d098b"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "swift_study.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;swift_study.ViewController&gt;"
+                  moduleName = "swift_study"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/igorsthaynny/Documents/GitHub/swift_study/swift_study/controllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "608">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "60871A9A-5776-4825-8CE5-455343F87872"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "swift_study/controllers/AdicionarItensViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "adicionarItem(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
