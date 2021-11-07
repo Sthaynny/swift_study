@@ -11,7 +11,9 @@ import UIKit
 
 class RefeicoesTableViewController: UITableViewController, AdicionaRefeicaoDelegate {
     var refeicoes = [
-        Refeicao(name: "Pizza", felicidade: 5),
+        Refeicao(name: "Pizza", felicidade: 5, itens: [
+            Item(nome: "Queijo", calorias: 51.1),
+            Item(nome: "Tomate", calorias: 51.1),]),
         Refeicao(name: "Podrão", felicidade: 5),
         Refeicao(name: "Macarrão", felicidade: 4),
     ]
@@ -37,9 +39,23 @@ class RefeicoesTableViewController: UITableViewController, AdicionaRefeicaoDeleg
         if gesture.state == .began{
             let celula = gesture.view as! UITableViewCell
             guard let indexPath = tableView.indexPath(for: celula) else{ return }
-            let refecicao = refeicoes[indexPath.row]
-            print(refecicao.name)
+            let refeicao = refeicoes[indexPath.row]
+            
+            exibirInformacoesRefeicao(refeicao)
+            
+            
         }
+    }
+    
+    func exibirInformacoesRefeicao(_ refeicao: Refeicao){
+        
+        let alerta = UIAlertController(title: refeicao.name, message: refeicao.detalhes(), preferredStyle: .alert)
+        let botaoCancelar = UIAlertAction(title: "Fechar", style: .cancel, handler: nil)
+        
+        
+        alerta.addAction(botaoCancelar)
+        
+        present(alerta, animated: true, completion: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

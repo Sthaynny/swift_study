@@ -27,6 +27,19 @@ class Refeicao: NSObject {
         return totalCalorias
     }
     
+    func detalhes() -> String{
+        var mensagem = "A sua felicidade ao consumir a refeicao é \(felicidade)!\n"
+     
+        for item in self.itens {
+            mensagem += "\n \(item.nome) - calorias: \(item.calorias)"
+            
+        }
+        
+        mensagem += "\n\nTotal calorias: \(totalCalorias())"
+        
+        return mensagem
+    }
+    
     
 }
 
