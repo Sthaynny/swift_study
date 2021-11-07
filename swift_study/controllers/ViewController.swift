@@ -94,19 +94,18 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
         
     }
     
+    func recuperaRefeicaoFormulario() -> Refeicao?{
+        guard let nomeRefeicao = nomeTextFild?.text , let felicidadeString = felicidadeTextFild?.text , let felicidade = Int(felicidadeString) else {return nil}
+        
+        return Refeicao(name: nomeRefeicao, felicidade: felicidade, itens: itensSelecionados)
+    }
+    
     // MARK: - IBActions
     
     @IBAction func adicionar(_ sender: Any) {
-        guard let nomeRefeicao = nomeTextFild?.text , let felicidadeString = felicidadeTextFild?.text , let felicidade = Int(felicidadeString) else {
-            print("erro ao adicionar refeição")
-            return
-        }
-        
-        let refeicao = Refeicao(name: nomeRefeicao, felicidade: felicidade, itens: itensSelecionados)
-       
-        print("Comi \(refeicao.name) fiquei com felicidade \(refeicao.felicidade)!")
-        
-        
+        guard let refeicao = recuperaRefeicaoFormulario() else{
+            Alerta(controller: self).exibir( mensagem: "Erro ao estrair dados da refeicao")
+            return }
         
         delegate?.add(refeicao)
         navigationController?.popViewController(animated: true)

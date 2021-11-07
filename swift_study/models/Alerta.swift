@@ -17,7 +17,7 @@ class Alerta{
     }
     func exibir(titulo: String = "Desculpa!!", mensagem: String = "Algo de errado aconteceu... Tente novamente"){
         let alerta = UIAlertController(title: titulo, message: mensagem, preferredStyle: .alert)
-        let fechar = UIAlertAction(title: "fechar", style: .cancel, handler: nil)
+        let fechar = UIAlertAction(title: "fechar", style: .cancel)
         alerta.addAction(fechar)
         controller.present(alerta, animated: true, completion: nil)
     }

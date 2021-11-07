@@ -35,13 +35,20 @@ class RefeicoesTableViewController: UITableViewController, AdicionaRefeicaoDeleg
         tableView.reloadData()
     }
     
+    
     @objc func mostrarDetalhes(_ gesture: UILongPressGestureRecognizer){
         if gesture.state == .began{
             let celula = gesture.view as! UITableViewCell
             guard let indexPath = tableView.indexPath(for: celula) else{ return }
             let refeicao = refeicoes[indexPath.row]
             
-            Alerta(controller: self).exibir(titulo: refeicao.name, mensagem: refeicao.detalhes())
+            RemoveRefeicaoViewController(controller: self).exibi(refeicao: refeicao, handler:
+                { alert in
+                self.refeicoes.remove(at: indexPath.row)
+                self.tableView.reloadData()
+                
+            })
+            
         }
     }
     
