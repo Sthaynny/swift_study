@@ -84,10 +84,7 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
     
     func add(_ item: Item) {
         guard let tableView = itensTableView else {
-            let alerta = UIAlertController(title: "Desculpa!!", message: "Algo de errado aconteceu... Tente novamente", preferredStyle: .alert)
-            let fechar = UIAlertAction(title: "fechar", style: .cancel, handler: nil)
-            alerta.addAction(fechar)
-            present(alerta, animated: true, completion: nil)
+            Alerta(controller: self).exibir()
             return
         }
 

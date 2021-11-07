@@ -74,6 +74,7 @@
                     <navigationItem key="navigationItem" title="Adicionar Receita" id="0PN-t0-NPa"/>
                     <connections>
                         <outlet property="felicidadeTextFild" destination="5vI-Bm-VQi" id="ZlD-ti-0LV"/>
+                        <outlet property="itensTableView" destination="AwG-e1-wjT" id="FhD-BS-G8q"/>
                         <outlet property="nomeTextFild" destination="sBX-e8-LLT" id="yUk-Um-1E5"/>
                     </connections>
                 </viewController>
