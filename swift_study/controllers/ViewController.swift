@@ -75,6 +75,20 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
     override func viewDidLoad() {
         let botaoAdicionaItem = UIBarButtonItem(title: "Add Item", style: .plain, target: self,  action: #selector(self.adicionarItem))
         navigationItem.rightBarButtonItem = botaoAdicionaItem
+        
+        
+        
+        do{
+            guard let caminho = recuperaDiretorio() else {return}
+            let dados = try Data(contentsOf: caminho)
+            guard let itensSalvos = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(dados) as? [Item] else{
+                return
+            }
+            itens = itensSalvos
+            
+        } catch{
+            print(error.localizedDescription)
+        }
     }
     
     @objc func adicionarItem() {
@@ -87,11 +101,29 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
             Alerta(controller: self).exibir()
             return
         }
-
+        
         itens.append(item)
         
         tableView.reloadData()
         
+        
+        
+        
+        do{
+            let dados = try NSKeyedArchiver.archivedData(withRootObject: itens, requiringSecureCoding: false)
+            guard let caminho = recuperaDiretorio() else {return}
+            try dados.write(to: caminho)
+        } catch{
+            print(error.localizedDescription)
+        }
+        
+    
+    }
+    
+    func recuperaDiretorio() -> URL? {
+        guard let diretorio = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else{ return nil }
+        let caminho = diretorio.appendingPathComponent("itens")
+        return caminho
     }
     
     func recuperaRefeicaoFormulario() -> Refeicao?{
@@ -104,7 +136,7 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
     
     @IBAction func adicionar(_ sender: Any) {
         guard let refeicao = recuperaRefeicaoFormulario() else{
-            Alerta(controller: self).exibir( mensagem: "Erro ao estrair dados da refeicao")
+            Alerta(controller: self).exibir( mensagem: "Erro ao extrair dados da refeicao")
             return }
         
         delegate?.add(refeicao)
