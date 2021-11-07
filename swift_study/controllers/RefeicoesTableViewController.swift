@@ -10,28 +10,10 @@ import UIKit
 
 
 class RefeicoesTableViewController: UITableViewController, AdicionaRefeicaoDelegate {
-    var refeicoes = [
-        Refeicao(name: "Pizza", felicidade: 5, itens: [
-            Item(nome: "Queijo", calorias: 51.1),
-            Item(nome: "Tomate", calorias: 51.1),]),
-        Refeicao(name: "Podrão", felicidade: 5),
-        Refeicao(name: "Macarrão", felicidade: 4),
-    ]
+    var refeicoes: [Refeicao] = []
     
     override func viewDidLoad() {
-        
-        guard let caminho = recuperaDiretorio() else {return}
-        
-        do{
-            let dados = try Data(contentsOf: caminho)
-            guard let refeicoesSalvas = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(dados) as? Array<Refeicao> else{
-                return
-            }
-            refeicoes = refeicoesSalvas
-            
-        } catch{
-            print(error.localizedDescription)
-        }
+        refeicoes = RefeicaoDAO.load()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -49,24 +31,7 @@ class RefeicoesTableViewController: UITableViewController, AdicionaRefeicaoDeleg
     func add(_ refeicao:Refeicao) {
         refeicoes.append(refeicao)
         tableView.reloadData()
-        
-        guard let caminho = recuperaDiretorio() else {return}
-        
-        do{
-            let dados = try NSKeyedArchiver.archivedData(withRootObject: refeicoes, requiringSecureCoding: false)
-            try dados.write(to: caminho)
-        } catch{
-            print(error.localizedDescription)
-        }
-        
-       
-        
-    }
-    
-    func recuperaDiretorio() -> URL? {
-        guard let diretorio = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else{ return nil }
-        let caminho = diretorio.appendingPathComponent("refeicao")
-        return caminho
+        RefeicaoDAO.save(refeicoes)
     }
     
     

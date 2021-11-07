@@ -18,15 +18,7 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
     
     // MARK: - ATRIBUTOS
     var delegate: AdicionaRefeicaoDelegate?
-    var itens: [Item] = [
-        Item(nome: "Queijo", calorias: 51.1),
-        Item(nome: "Tomate", calorias: 51.1),
-        Item(nome: "Arroz", calorias: 51.1),
-        Item(nome: "Calabresa", calorias: 51.1),
-        Item(nome: "Bacon", calorias: 51.1),
-        Item(nome: "Molho apimentado", calorias: 51.1),
-        
-    ]
+    var itens: [Item] = []
     var itensSelecionados: [Item] = []
     
     // MARK: - UITableViewDataSource
@@ -75,20 +67,12 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
     override func viewDidLoad() {
         let botaoAdicionaItem = UIBarButtonItem(title: "Add Item", style: .plain, target: self,  action: #selector(self.adicionarItem))
         navigationItem.rightBarButtonItem = botaoAdicionaItem
+        recuperarItens()
         
-        
-        
-        do{
-            guard let caminho = recuperaDiretorio() else {return}
-            let dados = try Data(contentsOf: caminho)
-            guard let itensSalvos = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(dados) as? [Item] else{
-                return
-            }
-            itens = itensSalvos
-            
-        } catch{
-            print(error.localizedDescription)
-        }
+    }
+    
+    func recuperarItens() {
+        itens = ItemDAO.load()
     }
     
     @objc func adicionarItem() {
@@ -106,24 +90,9 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
         
         tableView.reloadData()
         
-        
-        
-        
-        do{
-            let dados = try NSKeyedArchiver.archivedData(withRootObject: itens, requiringSecureCoding: false)
-            guard let caminho = recuperaDiretorio() else {return}
-            try dados.write(to: caminho)
-        } catch{
-            print(error.localizedDescription)
-        }
+        ItemDAO.save(itens)
         
     
-    }
-    
-    func recuperaDiretorio() -> URL? {
-        guard let diretorio = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else{ return nil }
-        let caminho = diretorio.appendingPathComponent("itens")
-        return caminho
     }
     
     func recuperaRefeicaoFormulario() -> Refeicao?{
