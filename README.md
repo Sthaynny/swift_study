@@ -13,7 +13,7 @@
   <a href="mailto:igorsthaynny@gmail.com">
    <img alt="E-mail" src="https://img.shields.io/badge/-igorsthaynny%40gmail.com-%23525DCB" />
 
-  </a>+
+  </a>
 </p>
 
 <p align="center">Project developed to study Swift</p>
