@@ -16,10 +16,6 @@
   </a>+
 </p>
 
-<p align="center">
-  📰 ig.news is a blog where you can stay on top of the latest news about the React world.
-</p>
-
 <p align="center">Project developed to study Swift</p>
 
 <hr />
